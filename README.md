@@ -2,7 +2,7 @@
 
 ```
 # clone the repository to /opt/redis-backup with the following command
-sudo mkdir -p /opt/redis-backup && sudo chown $USER:root /opt/redis-backup && git clone git@github.com:szilveszter9/redis-backup.git /opt/redis-backup
+sudo mkdir -p /opt/redis-backup && sudo chown $USER:root /opt/redis-backup && git clone git@github.com:MailOnline/redis-backup.git /opt/redis-backup
 
 # example: install cron job for daily backup to your /mnt/ramdisk/ at 4am where you want to keep your backups for 7 days and your redis password is SeCrEtPw
 /opt/redis-backup/install.sh 00 04 \* \* \* /mnt/ramdisk/ 7 SeCrEtPw
