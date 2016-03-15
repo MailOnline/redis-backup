@@ -1,5 +1,5 @@
 #!/bin/bash
-if [ "$#" -ne 1 ]; then
+if [ "$#" -ne 2 ]; then
   echo "usage: /opt/redis-backup/clean-backups.sh TARGET_DIR OLDER_THAN_X_DAYS"
   echo "expample: /opt/redis-backup/clean-backups.sh /mnt/ramdisk/ 7"
   exit 1
