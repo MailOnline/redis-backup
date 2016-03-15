@@ -7,6 +7,11 @@ sudo mkdir -p /opt/redis-backup && sudo chown $USER:root /opt/redis-backup && gi
 
 # example: install cron job for daily backup to your /mnt/ramdisk/ at 4am where you want to keep your backups for 7 days and your redis password is SeCrEtPw
 /opt/redis-backup/install.sh 00 04 \* \* \* /mnt/ramdisk/ 7 SeCrEtPw
+# notice: first five parameters are crontab parameters in order, the only thing that *s have to be escaped with backslash
+
+# example: install cron job backup every 15 minutes
+/opt/redis-backup/install.sh \*/15 \* \* \* \* /mnt/ramdisk/ 7 SeCrEtPw
+
 ```
 
 ### Check config
